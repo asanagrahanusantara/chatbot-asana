@@ -61,8 +61,8 @@ def bot():
 
     # --- DETAIL PRODUK: ZARAYA BERAWA ---
     elif 'berawa' in pesan_masuk:
-         balasan = (
-            "Anda memilih *ZARAYA VILLAS BERAWA* - Luxury & Lifestyle in Canggu.\n\n"
+        balasan = (
+            "Anda memilih *ZARAYA VILLAS CANGGU* - Luxury & Lifestyle in Canggu.\n\n"
             "Villa eksklusif di pusat turis Berawa-Canggu yang sangat diminati. Nikmati kemewahan dengan akses mudah ke beach club, cafe, dan destinasi populer lainnya.\n\n"
             "✅ Status: Leasehold 23 Tahun\n"
             "✅ Kondisi: Fully Furnished\n"
@@ -118,6 +118,9 @@ def bot():
     resp.message(balasan)
     return str(resp)
 
-# Jalankan server Flask
-if __name__ == '__main__':
-    app.run(debug=True)
+# --- BAGIAN DI BAWAH INI SENGAJA DINONAKTIFKAN ---
+# Baris ini hanya untuk pengujian lokal. Di server produksi seperti Railway,
+# Gunicorn akan menjalankan aplikasi ini secara langsung.
+# if __name__ == '__main__':
+#     app.run(debug=True)
+
